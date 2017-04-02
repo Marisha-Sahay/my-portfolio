@@ -1,0 +1,323 @@
+<!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top" onclick=$("#menu-close").click();>Site Map:</a>
+            </li>
+            <li>
+                <a href="#top" onclick=$("#menu-close").click();>Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick=$("#menu-close").click();>About</a>
+            </li>
+            <li>
+                <a href="#services" onclick=$("#menu-close").click();>Technologies</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick=$("#menu-close").click();>Recent Projects</a>
+            </li>
+            <li>
+                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>Marisha Sahay</h1>
+            <h3>Full Stack Web Developer</h3>
+            <ul class="list-inline">
+                <li>
+                    <a href="https://github.com/Marisha-Sahay"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/marishasahay"><i class="fa fa-twitter fa-fw fa-3x", target: :_blank></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/marisha-sahay/"><i class="fa fa-linkedin fa-fw fa-3x", target: :_blank></i></a> 
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/marishasahay"><i class="fa fa-facebook fa-fw fa-3x", target: :_blank></i></a> 
+                </li>
+            </ul>
+            <br>
+            <a href="#portfolio" class="btn btn-dark btn-lg">Recent Project</a>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About Me</h2>
+                    <p class="lead">A customer focused Web developer & QA engineer with a methodical approach to quality, detail, budget and timeliness. I'm all about making sure that products and user experience are launched with zero defect and on schedule.</p>
+                    <br>
+                    <p class="lead">Have been developing web apps using Ruby on Rails. Playing with android app development these days. In my previous life I did web testing and mobile testing for both apps and games after staring my career as .Net developer.</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Techonologies</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Backend</strong>
+                                </h4>
+                                <p>Ruby on Rails</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Databases</strong>
+                                </h4>
+                                <p>MySql, Oracle, Postgres</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Front-end</strong>
+                                </h4>
+                                <p>AngularJS/Javascript/HTML/CSS</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>OS</strong>
+                                </h4>
+                                <p>Windows/Unix/Linux</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Recent Projects</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <%= link_to image_tag("Bitcoin-Caffe.png", class: "project-image"), "https://stark-cliffs-49520.herokuapp.com/", target: :_blank%>
+                                <p>“All things bitcoin” -- an information hub for new and veteran bitcoin users to read the latest news on the cryptocurrency.
+                                <li>Developed newsfeed feature in Ruby on Rails incorporating Webhouse.io API to provide latest Bitcoin articles.</li>
+                                <li>Integrated Twitter API into Rails backend to provide users with 20 new tweets about Bitcoin each day.</li>
+                                </p>
+                                <p><%= link_to "Code ","https://github.com/Marisha-Sahay/bitcoin", target: :_blank %><%= link_to "Live","https://stark-cliffs-49520.herokuapp.com/", target: :_blank %></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <%= link_to image_tag("go-happy-babysitters.png", class: "project-image"), "https://fast-spire-15806.herokuapp.com/", target: :_blank%>
+                                <p>
+                                    Childcare platform to connect active babysitters with busy parents to facilitate the best match between both parties.   
+                                    <li>Enabled real-time chat functionality in < 1 sec between parents and babysitters utilizing Rails and JavaScript.</li>
+                                    <li>Architected RESTful API with 10+ routes to handle search, enrollment, reviewing and geolocation in Rails.</li>
+                                    <li>Created a <%= link_to "facebook messenger bot ", "https://www.facebook.com/goHappyBabysitters/" %> using Javascript to auto-generate content and reply to user inquiries. </li>
+                                </p>
+                                <p><%= link_to "Code ","https://github.com/Marisha-Sahay/go_happy_app", target: :_blank %><%= link_to "Live","https://fast-spire-15806.herokuapp.com/", target: :_blank %></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <%= link_to image_tag("Root-Solutions.png", class: "project-image"), "http://qa-root-solutions.herokuapp.com/", target: :_blank%>
+                                <p>Developed their website using Ruby on Rails and Javascript.</p><p> Root Solutions is a company who leverage the science of human decision-making to build a world in which behavior is in harmony, rather than in conflict with the processes that allow all life to thrive. They work with environmental leaders to increase the impact of environmental initiatives.</p>
+                                <p><%= link_to "Code ","https://github.com/the-difference-engine/root-solutions", target: :_blank %><%= link_to "Live","http://qa-root-solutions.herokuapp.com/", target: :_blank %></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <%= link_to image_tag("Earthquake-finder.png", class: "project-image"), "https://serene-ravine-10756.herokuapp.com/", target: :_blank%>
+                                <p>
+                                    Platform to get information on earhtquake effect in Los Angeles from the earthquakes in different parts of California.
+                                    <li>Developed earthquake information feature in Ruby on Rails incorporating CSV file to provide latest earthquake information.</li>
+                                </p>
+                                <p><%= link_to "Code ","https://github.com/Marisha-Sahay/la_earthquakes", target: :_blank %><%= link_to "Live","https://serene-ravine-10756.herokuapp.com/", target: :_blank %></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                    <%= link_to "View My Repo","https://github.com/Marisha-Sahay?tab=repositories", class: "btn btn-dark", target: :_blank %>
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Call to Action -->
+    <aside class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>Read My Blog</h3>
+                    <a href="https://techthinkingblog.wordpress.com/" class="btn btn-lg btn-light">TechThinking</a>
+                    <!-- <a href="#" class="btn btn-lg btn-dark">Look at Me!</a> -->
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Map -->
+    <section id="contact">
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Marisha Sahay</strong>
+                    </h4>
+                    <p>San Francisco, CA 94132</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (408) 717-1168</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">marishasahay@gmail.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://github.com/Marisha-Sahay"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/marishasahay"><i class="fa fa-twitter fa-fw fa-3x", target: :_blank></i></a>
+                        </li>
+                        <li>
+                           <a href="https://www.linkedin.com/in/marisha-sahay/"><i class="fa fa-linkedin fa-fw fa-3x", target: :_blank></i></a> 
+                        </li>
+                        <li>
+                           <a href="https://www.facebook.com/marishasahay"><i class="fa fa-facebook fa-fw fa-3x", target: :_blank></i></a> 
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; @marishasahay <%= Time.now.year %></p>
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    // Disable Google Maps scrolling
+    // See http://stackoverflow.com/a/25904582/1607849
+    // Disable scroll zooming and bind back the click event
+    var onMapMouseleaveHandler = function(event) {
+        var that = $(this);
+        that.on('click', onMapClickHandler);
+        that.off('mouseleave', onMapMouseleaveHandler);
+        that.find('iframe').css("pointer-events", "none");
+    }
+    var onMapClickHandler = function(event) {
+            var that = $(this);
+            // Disable the click handler until the user leaves the map area
+            that.off('click', onMapClickHandler);
+            // Enable scrolling zoom
+            that.find('iframe').css("pointer-events", "auto");
+            // Handle the mouse leave event
+            that.on('mouseleave', onMapMouseleaveHandler);
+        }
+        // Enable map zooming with mouse scroll when the user clicks the map
+    $('.map').on('click', onMapClickHandler);
+    </script>
