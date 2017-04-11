@@ -44,7 +44,7 @@
                 </li>
             </ul>
             <br>
-            <a href="#portfolio" class="btn btn-dark btn-lg" >Recent Project</a>
+            <a href="#portfolio" class="btn btn-dark btn-lg" >Recent Projects</a>
         </div>
     </header>
     <!-- About -->
@@ -56,9 +56,9 @@
                     <div>
                         <%= image_tag ("008_MarishaSahay.jpg"), class: "my-pic" %>
                     </div>
-                    <p class="lead">A customer focused Web developer & QA engineer with a methodical approach to quality, detail, budget and timeliness. I'm all about making sure that products and user experience are launched with zero defect and on schedule.</p>
+                    <p class="lead">A customer focused Web developer & QA engineer with a methodical approach to quality, detail, budget and timeliness. I'm all about making sure that products and user experiences are deployed with zero defects and on schedule.</p>
                     <br>
-                    <p class="lead">Have been developing web apps using Ruby on Rails. Playing with android app development these days. In my previous life I did web testing and mobile testing for both apps and games after staring my career as .Net developer.</p>
+                    <p class="lead">Have been developing web applications using Ruby on Rails and playing with android app development these days. In my previous life I did web and mobile testing for both applications and games after staring my career as .Net developer.</p>
                 </div>
             </div>
             <!-- /.row -->
@@ -144,40 +144,40 @@
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <%= link_to image_tag("Bitcoin-Caffe.png", class: "project-image"), "http://www.bitcoincaffe.com/", target: :_blank%>
-                                <p>“All things bitcoin” -- an information hub for new and veteran bitcoin users to read the latest news on the cryptocurrency.
+                                <p class="project-description">“All things bitcoin” -- an information hub for new and veteran bitcoin users to read the latest news on the cryptocurrency.</p>
                                 <li>Developed newsfeed feature in Ruby on Rails incorporating Webhouse.io API to provide latest Bitcoin articles.</li>
                                 <li>Integrated Twitter API into Rails backend to provide users with 20 new tweets about Bitcoin each day.</li>
-                                </p>
-                                <p><%= link_to "Code ","https://github.com/Marisha-Sahay/bitcoin", target: :_blank %><%= link_to "Live","http://www.bitcoincaffe.com/", target: :_blank %></p>
+                                <p><%= link_to "Github Code","https://github.com/Marisha-Sahay/bitcoin", target: :_blank %></p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <%= link_to image_tag("go-happy-babysitters.png", class: "project-image"), "https://fast-spire-15806.herokuapp.com/", target: :_blank%>
-                                <p>
-                                    Childcare platform to connect active babysitters with busy parents to facilitate the best match between both parties.   
-                                    <li>Enabled real-time chat functionality in < 1 sec between parents and babysitters utilizing Rails and JavaScript.</li>
-                                    <li>Architected RESTful API with 10+ routes to handle search, enrollment, reviewing and geolocation in Rails.</li>
-                                    <li>Created a <%= link_to "facebook messenger bot ", "https://www.facebook.com/goHappyBabysitters/" %> using Javascript to auto-generate content and reply to user inquiries. </li>
-                                </p>
-                                <p><%= link_to "Code ","https://github.com/Marisha-Sahay/go_happy_app", target: :_blank %><%= link_to "Live","https://fast-spire-15806.herokuapp.com/", target: :_blank %></p>
+                                <p class="project-description">
+                                    Childcare platform to connect active babysitters with busy parents to facilitate the best match between both parties. </p>  
+                                <li>Enabled real-time chat functionality in < 1 sec between parents and babysitters utilizing Rails and JavaScript.</li>
+                                <li>Architected RESTful API with 10+ routes to handle search, enrollment, reviewing and geolocation in Rails.</li>
+                                <li>Created a <%= link_to "facebook messenger bot ", "https://www.facebook.com/goHappyBabysitters/" %> using Javascript to auto-generate content and reply to user inquiries. </li>
+                                <p><%= link_to "Github Code","https://github.com/Marisha-Sahay/go_happy_app", target: :_blank%></p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <%= link_to image_tag("Root-Solutions.png", class: "project-image"), "http://qa-root-solutions.herokuapp.com/", target: :_blank%>
-                                <p>Developed their website using Ruby on Rails and Javascript.</p><p> Root Solutions is a company who leverage the science of human decision-making to build a world in which behavior is in harmony, rather than in conflict with the processes that allow all life to thrive. They work with environmental leaders to increase the impact of environmental initiatives.</p>
-                                <p><%= link_to "Code ","https://github.com/the-difference-engine/root-solutions", target: :_blank %><%= link_to "Live","http://qa-root-solutions.herokuapp.com/", target: :_blank %></p>
+                                <p class="project-description"> Root Solutions is a company who leverage the science of human decision-making to build a world in which behavior is in harmony, rather than in conflict with the processes that allow all life to thrive. They work with environmental leaders to increase the impact of environmental initiatives.</p>
+                                <li>Developed their website using Ruby on Rails and Javascript.</li>
+                                <li>Refactored RootSolutions platform into multi-page web application utilizing Ruby on Rails with custom controllers and routes to handle user enrollment and admin privileges.</li>
+                                <p><%= link_to "Github Code","https://github.com/the-difference-engine/root-solutions", target: :_blank %></p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <%= link_to image_tag("Earthquake-finder.png", class: "project-image"), "https://serene-ravine-10756.herokuapp.com/", target: :_blank%>
-                                <p>
+                                <p class="project-description">
                                     Platform to get information on earhtquake effect in Los Angeles from the earthquakes in different parts of California.
-                                    <li>Developed earthquake information feature in Ruby on Rails incorporating CSV file to provide latest earthquake information.</li>
                                 </p>
-                                <p><%= link_to "Code ","https://github.com/Marisha-Sahay/la_earthquakes", target: :_blank %><%= link_to "Live","https://serene-ravine-10756.herokuapp.com/", target: :_blank %></p>
+                                <li>Developed earthquake information feature in Ruby on Rails incorporating CSV file to provide latest earthquake information.</li>
+                                <p><%= link_to "Github Code","https://github.com/Marisha-Sahay/la_earthquakes", target: :_blank %></p>
                             </div>
                         </div>
                     </div>
